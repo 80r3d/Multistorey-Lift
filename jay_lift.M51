@@ -1,0 +1,233 @@
+BL51 BANKED LINKER/LOCATER V6.00                                                        04/19/2019  10:26:17  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.00, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj TO jay_lift RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CLDPTR)
+
+
+LINK MAP OF MODULE:  jay_lift (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0003H     UNIT         _DATA_GROUP_
+            IDATA   000BH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     00AAH     UNIT         ?CO?MAIN
+            CODE    00ADH     0054H     UNIT         ?PR?LCD_DEFAULT_MSG?MAIN
+            CODE    0101H     0038H     UNIT         ?PR?LCD_WELCOME_MSG?MAIN
+            CODE    0139H     0026H     UNIT         ?PR?LCD_INIT?MAIN
+            CODE    015FH     0025H     UNIT         ?PR?_LCD_STRING?MAIN
+            CODE    0184H     0024H     UNIT         ?PR?MAIN?MAIN
+            CODE    01A8H     0020H     UNIT         ?PR?_DELAY?MAIN
+            CODE    01C8H     0019H     UNIT         ?C?LIB_CODE
+            CODE    01E1H     000CH     UNIT         ?C_C51STARTUP
+            CODE    01EDH     000AH     UNIT         ?PR?_LCD_DATA?MAIN
+            CODE    01F7H     000AH     UNIT         ?PR?_LCD_COMMAND?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   jay_lift (MAIN)
+
+
+SEGMENT                            DATA_GROUP 
+  +--> CALLED SEGMENT            START    LENGTH
+------------------------------------------------
+?C_C51STARTUP                    -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                    -----    -----
+  +--> ?PR?LCD_INIT?MAIN
+  +--> ?PR?_DELAY?MAIN
+
+?PR?LCD_INIT?MAIN                -----    -----
+  +--> ?PR?_LCD_COMMAND?MAIN
+  +--> ?PR?LCD_WELCOME_MSG?MAIN
+  +--> ?PR?_DELAY?MAIN
+  +--> ?PR?LCD_DEFAULT_MSG?MAIN
+BL51 BANKED LINKER/LOCATER V6.00                                                      04/19/2019  10:26:17  PAGE 2
+
+
+
+?PR?_LCD_COMMAND?MAIN            -----    -----
+  +--> ?PR?_DELAY?MAIN
+
+?PR?LCD_WELCOME_MSG?MAIN         -----    -----
+  +--> ?PR?_LCD_COMMAND?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_LCD_STRING?MAIN
+
+?PR?_LCD_STRING?MAIN             0008H    0003H
+  +--> ?PR?_LCD_DATA?MAIN
+
+?PR?_LCD_DATA?MAIN               -----    -----
+  +--> ?PR?_DELAY?MAIN
+
+?PR?LCD_DEFAULT_MSG?MAIN         -----    -----
+  +--> ?PR?_LCD_COMMAND?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_LCD_STRING?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  jay_lift (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:0098H         PUBLIC        label_call
+  C:0093H         PUBLIC        label_mode
+  C:0066H         PUBLIC        msg_up
+  B:0090H.0       PUBLIC        P1_0
+  C:01B0H         PUBLIC        _delay
+  C:0070H         PUBLIC        label_door_close
+  C:009FH         PUBLIC        label_lift
+  C:01F7H         PUBLIC        _LCD_command
+  B:00A0H.6       PUBLIC        P2_6
+  B:00A0H.7       PUBLIC        P2_7
+  C:008DH         PUBLIC        label_door
+  B:0098H.1       PUBLIC        TI
+  C:0184H         PUBLIC        main
+  C:0061H         PUBLIC        msg_manual
+  C:00A6H         PUBLIC        label_ritz
+  C:0076H         PUBLIC        label_door_open
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  C:00ADH         PUBLIC        LCD_default_msg
+  D:008DH         PUBLIC        TH1
+  C:0101H         PUBLIC        LCD_welcome_msg
+  C:015FH         PUBLIC        _LCD_string
+  C:01EDH         PUBLIC        _LCD_data
+  B:0088H.6       PUBLIC        TR1
+  C:0003H         PUBLIC        line1
+  C:0018H         PUBLIC        line2
+  C:002DH         PUBLIC        line3
+BL51 BANKED LINKER/LOCATER V6.00                                                      04/19/2019  10:26:17  PAGE 3
+
+
+  C:0042H         PUBLIC        line4
+  C:007CH         PUBLIC        label_company_name
+  C:006BH         PUBLIC        msg_down
+  C:005CH         PUBLIC        msg_auto
+  C:0139H         PUBLIC        LCD_init
+  C:0057H         PUBLIC        msg_stop
+  -------         PROC          MAIN
+  C:0184H         LINE#         99
+  C:0184H         LINE#         105
+  C:0187H         LINE#         106
+  C:018AH         LINE#         107
+  C:018DH         LINE#         108
+  C:018FH         LINE#         109
+  C:0191H         LINE#         112
+  C:0194H         LINE#         118
+  C:0194H         LINE#         122
+  C:0196H         LINE#         123
+  C:019DH         LINE#         124
+  C:019FH         LINE#         125
+  C:01A6H         LINE#         127
+  -------         ENDPROC       MAIN
+  -------         PROC          L?0018
+  -------         ENDPROC       L?0018
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        k
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:01B0H         LINE#         131
+  C:01B0H         LINE#         132
+  C:01B3H         LINE#         133
+  C:01C7H         LINE#         134
+  -------         ENDPROC       _DELAY
+  -------         PROC          LCD_INIT
+  C:0139H         LINE#         137
+  C:0139H         LINE#         138
+  C:013EH         LINE#         139
+  C:0143H         LINE#         140
+  C:0148H         LINE#         141
+  C:014DH         LINE#         142
+  C:0152H         LINE#         144
+  C:0155H         LINE#         145
+  C:015CH         LINE#         146
+  -------         ENDPROC       LCD_INIT
+  -------         PROC          LCD_WELCOME_MSG
+  C:0101H         LINE#         150
+  C:0101H         LINE#         151
+  C:0106H         LINE#         152
+  C:010FH         LINE#         153
+  C:0114H         LINE#         154
+  C:011DH         LINE#         155
+  C:0122H         LINE#         156
+  C:012BH         LINE#         157
+  C:0130H         LINE#         158
+  -------         ENDPROC       LCD_WELCOME_MSG
+  -------         PROC          LCD_DEFAULT_MSG
+  C:00ADH         LINE#         161
+BL51 BANKED LINKER/LOCATER V6.00                                                      04/19/2019  10:26:17  PAGE 4
+
+
+  C:00ADH         LINE#         162
+  C:00B2H         LINE#         163
+  C:00BBH         LINE#         164
+  C:00C0H         LINE#         165
+  C:00C9H         LINE#         166
+  C:00CEH         LINE#         167
+  C:00D7H         LINE#         168
+  C:00DCH         LINE#         169
+  C:00E5H         LINE#         170
+  C:00EAH         LINE#         171
+  C:00F3H         LINE#         172
+  C:00F8H         LINE#         173
+  -------         ENDPROC       LCD_DEFAULT_MSG
+  -------         PROC          _LCD_STRING
+  D:0008H         SYMBOL        s
+  C:015FH         LINE#         185
+  C:0165H         LINE#         186
+  C:0170H         LINE#         187
+  C:0181H         LINE#         188
+  C:0183H         LINE#         189
+  -------         ENDPROC       _LCD_STRING
+  -------         PROC          _LCD_DATA
+  D:0007H         SYMBOL        d
+  C:01EDH         LINE#         191
+  C:01EDH         LINE#         192
+  C:01EFH         LINE#         193
+  C:01EFH         LINE#         194
+  C:01EFH         LINE#         195
+  C:01F2H         LINE#         196
+  C:01F4H         LINE#         197
+  -------         ENDPROC       _LCD_DATA
+  -------         PROC          _LCD_COMMAND
+  D:0007H         SYMBOL        cmd
+  C:01F7H         LINE#         200
+  C:01F7H         LINE#         201
+  C:01F9H         LINE#         202
+  C:01F9H         LINE#         203
+  C:01F9H         LINE#         204
+  C:01FCH         LINE#         205
+  C:01FEH         LINE#         206
+  -------         ENDPROC       _LCD_COMMAND
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?CLDPTR
+  C:01C8H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+Program Size: data=12.0 xdata=0 code=513
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,442 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+G:\jay lift\jay_lift.uv2
+Project File Date:  04/19/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(27): error C141: syntax error near '='
+MAIN.C(35): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(35): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=30.1 xdata=0 code=1131
+"jay_lift" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=30.1 xdata=0 code=1132
+"jay_lift" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=30.1 xdata=0 code=1132
+"jay_lift" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=30.1 xdata=0 code=1132
+"jay_lift" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(29): error C141: syntax error near '='
+MAIN.C(31): error C141: syntax error near '='
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(29): error C141: syntax error near '.0'
+MAIN.C(31): error C141: syntax error near '.0'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(29): error C202: 'P1_0': undefined identifier
+MAIN.C(31): error C202: 'P1_0': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(15): error C231: 'P0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(16): error C231: 'SP': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(17): error C231: 'DPL': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(18): error C231: 'DPH': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(19): error C231: 'PCON': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(20): error C231: 'TCON': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(21): error C231: 'TMOD': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(22): error C231: 'TL0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(23): error C231: 'TL1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(24): error C231: 'TH0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(25): error C231: 'TH1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(26): error C231: 'P1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(27): error C231: 'SCON': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(28): error C231: 'SBUF': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(29): error C231: 'P2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(30): error C231: 'IE': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(31): error C231: 'P3': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(32): error C231: 'IP': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(33): error C231: 'T2CON': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(35): error C231: 'RCAP2L': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(36): error C231: 'RCAP2H': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(37): error C231: 'TL2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(38): error C231: 'TH2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(39): error C231: 'PSW': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(40): error C231: 'ACC': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(41): error C231: 'B': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(70): error C231: 'IT0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(71): error C231: 'IE0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(72): error C231: 'IT1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(73): error C231: 'IE1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(74): error C231: 'TR0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(75): error C231: 'TF0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(76): error C231: 'TR1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(77): error C231: 'TF1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(106): error C231: 'T2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(107): error C231: 'T2EX': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(112): error C231: 'RI': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(113): error C231: 'TI': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(114): error C231: 'RB8': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(115): error C231: 'TB8': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(116): error C231: 'REN': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(117): error C231: 'SM2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(118): error C231: 'SM1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(119): error C231: 'SM0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(136): error C231: 'EX0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(137): error C231: 'ET0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(138): error C231: 'EX1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(139): error C231: 'ET1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(140): error C231: 'ES': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(141): error C231: 'ET2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(143): error C231: 'EA': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(157): error C231: 'RXD': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(158): error C231: 'TXD': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(159): error C231: 'INT0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(160): error C231: 'INT1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(161): error C231: 'T0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(162): error C231: 'T1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(163): error C231: 'WR': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(164): error C231: 'RD': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(169): error C231: 'PX0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(170): error C231: 'PT0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(171): error C231: 'PX1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(172): error C231: 'PT1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(173): error C231: 'PS': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(174): error C231: 'PT2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(179): error C231: 'CP_RL2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(180): error C231: 'C_T2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(181): error C231: 'TR2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(182): error C231: 'EXEN2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(183): error C231: 'TCLK': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(184): error C231: 'RCLK': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(185): error C231: 'EXF2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(186): error C231: 'TF2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(197): error C231: 'P': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(199): error C231: 'OV': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(200): error C231: 'RS0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(201): error C231: 'RS1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(202): error C231: 'F0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(203): error C231: 'AC': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X52.H(204): error C231: 'CY': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=72
+"jay_lift" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=72
+"jay_lift" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(63): error C141: syntax error near ';'
+MAIN.C(63): error C129: missing ';' before 'prototypes'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(67): error C141: syntax error near '*'
+MAIN.C(85): error C141: syntax error near ';'
+MAIN.C(85): error C129: missing ';' before 'programme'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(85): error C141: syntax error near ';'
+MAIN.C(85): error C129: missing ';' before 'programme'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(138): error C231: 'LCD_welcome_msg': redefinition
+MAIN.C(138): error C231: 'LCD_welcome_msg': redefinition
+MAIN.C(139): error C231: 'LCD_def_msg': redefinition
+MAIN.C(139): error C231: 'LCD_def_msg': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?MAIN
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 005AH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 005FH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0064H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0069H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 006EH
+Program Size: data=9.0 xdata=0 code=199
+"jay_lift" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_STRING
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 005AH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 005FH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0064H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0069H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 006EH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_STRING
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 00CCH
+Program Size: data=9.0 xdata=0 code=207
+"jay_lift" - 0 Error(s), 8 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_STRING
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 005AH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 005FH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0064H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0069H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 006EH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_STRING
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 00CCH
+Program Size: data=9.0 xdata=0 code=207
+creating hex file from "jay_lift"...
+"jay_lift" - 0 Error(s), 8 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(77): error C129: missing ';' before '0x100'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C141: syntax error near '*'
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 's': undefined identifier
+MAIN.C(155): error C202: 's': undefined identifier
+MAIN.C(157): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 'null': undefined identifier
+MAIN.C(157): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C141: syntax error near '*'
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 's': undefined identifier
+MAIN.C(155): error C202: 's': undefined identifier
+MAIN.C(157): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C141: syntax error near '*'
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 's': undefined identifier
+MAIN.C(155): error C202: 's': undefined identifier
+MAIN.C(157): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C141: syntax error near 's', expected ')'
+MAIN.C(152): error C158: '_LCD_string': function contains unnamed parameter
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 's': undefined identifier
+MAIN.C(155): error C202: 's': undefined identifier
+MAIN.C(157): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 'null': undefined identifier
+MAIN.C(157): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C141: syntax error near '*'
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 's': undefined identifier
+MAIN.C(155): error C202: 's': undefined identifier
+MAIN.C(157): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C141: syntax error near '*'
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 's1': undefined identifier
+MAIN.C(155): error C202: 'null': undefined identifier
+MAIN.C(158): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(152): error C231: '_LCD_string': redefinition
+MAIN.C(154): error C202: 'null': undefined identifier
+MAIN.C(157): error C231: '_LCD_string': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(154): error C202: 'null': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_DATA
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0092H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0097H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 009CH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 00A1H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 00A6H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 005AH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0068H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0076H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_COMMAND
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0084H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_DATA
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 00D5H
+Program Size: data=12.0 xdata=0 code=316
+creating hex file from "jay_lift"...
+"jay_lift" - 0 Error(s), 12 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(93): error C279: 'label_door': multiple initialization
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=12.0 xdata=0 code=430
+creating hex file from "jay_lift"...
+"jay_lift" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(146): warning C206: 'LCD_default_msg': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_DEF_MSG?MAIN
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  LCD_DEFAULT_MSG
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  LCD_DEFAULT_MSG
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0109H
+Program Size: data=12.0 xdata=0 code=430
+creating hex file from "jay_lift"...
+"jay_lift" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(146): warning C206: 'LCD_default_msg': missing function-prototype
+MAIN.C(161): error C231: 'LCD_default_msg': redefinition
+MAIN.C(182): error C231: 'LCD_default_msg': redefinition
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=12.0 xdata=0 code=513
+creating hex file from "jay_lift"...
+"jay_lift" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=12.0 xdata=0 code=513
+creating hex file from "jay_lift"...
+"jay_lift" - 0 Error(s), 0 Warning(s).

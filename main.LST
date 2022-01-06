@@ -1,0 +1,236 @@
+C51 COMPILER V8.05a   MAIN                                                                 04/19/2019 10:26:16 PAGE 1   
+
+
+C51 COMPILER V8.05a, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <stdio.h>
+   2          
+   3          #include "AT89X52.h"
+   4          
+   5          #ifdef MONITOR51                         /* Debugging with Monitor-51 needs   */
+              char code reserve [3] _at_ 0x23;         /* space for serial interrupt if     */
+              #endif                                   /* Stop Exection with Serial Intr.   */
+   8          
+   9          #define         ON              0
+  10          #define         OFF             1
+  11          
+  12          #define         Out_DN_RUN      P2_1
+  13          #define         Out_UP_RUN      P2_2
+  14          #define         Out_R_CAM       P2_3
+  15          #define         Out_DR_BUZ      P2_4
+  16          
+  17          #define         CAR_CALL        P1
+  18          
+  19          #define         CARG    P1_0
+  20          #define         CAR1    P1_1
+  21          #define         CAR2    P1_2
+  22          #define         CAR3    P1_3
+  23          #define         CAR4    P1_4
+  24          #define         CAR5    P1_5
+  25          
+  26          #define         I_DR_ILK1       P1_6
+  27          #define         I_RCAM_ILK2     P1_7
+  28          
+  29          #define         FLR_SWITCH      P3
+  30          
+  31          #define         FLRG    P3_0
+  32          #define         FLR1    P3_1
+  33          #define         FLR2    P3_2
+  34          #define         FLR3    P3_3
+  35          #define         FLR4    P3_4
+  36          #define         FLR5    P3_5
+  37          
+  38          #define         I_STOP  P3_6
+  39          #define         I_AM_MN P3_7
+  40          
+  41          //************************* LCD intialization .. 4 line * 20 char ***********************
+  42          
+  43          #define         LCD_RS  P2_7
+  44          #define         LCD_RW  0
+  45          #define         LCD_EN  P2_6
+  46          
+  47          #define         LCD_PORT        P0
+  48          
+  49          
+  50          #define         LCD_line1_adrs  0x80
+  51          #define         LCD_line2_adrs  0xc0
+  52          #define         LCD_line3_adrs  0x94
+  53          #define         LCD_line4_adrs  0xd4
+  54          
+  55          #define         LCD_config1             0x38                              // 8 bit >2 line
+C51 COMPILER V8.05a   MAIN                                                                 04/19/2019 10:26:16 PAGE 2   
+
+  56          #define         LCD_config2             0x0C                              // no flash autoincrement
+  57          #define         LCD_config3             0x10
+  58          #define         LCD_config4             0x06
+  59          #define         LCD_clear               0x01                                    // lcd display clear
+  60          
+  61          
+  62          
+  63          //****************** Function prototypes ********************************************************
+  64                  
+  65          void LCD_command(char );
+  66          void LCD_data(char);
+  67          void LCD_string( char[]);
+  68          
+  69          
+  70          void delay(int);                   
+  71          void LCD_init(void);
+  72          void LCD_welcome_msg(void);
+  73          void LCD_default_msg(void);
+  74          
+  75          
+  76          
+  77          const char  code line1[] = "      Swami Sriji   " ;
+  78          const char  code line2[] = " Texmex Instruments " ;
+  79          const char  code line3[] = "     Ahmedabad      " ;
+  80          const char  code line4[] = "    M- 9427553718   " ;
+  81          
+  82          const char code msg_stop[] = "STOP";
+  83          const char code msg_auto[] = "AUTO";
+  84          const char code msg_manual[] = "MAN ";
+  85          const char code msg_up[] = " UP ";
+  86          const char code msg_down[] = "DOWN";
+  87          const char code label_door_close[] = "CLOSE";
+  88          const char code label_door_open[] = "OPEN ";
+  89          
+  90          const char code label_company_name[] = " JP Asssociates ";
+  91          const char code label_door[] = "DOOR:";
+  92          const char code label_mode[] = "MODE";
+  93          const char code label_call[] = "CALL:-";
+  94          const char code label_lift[] = "LIFT:-";
+  95          const char code label_ritz[] = "RITZ:-";
+  96          
+  97          //************************ Main programme startes here ************************************
+  98          
+  99          void main(void){
+ 100   1      
+ 101   1      /*------------------------------------------------
+ 102   1      Setup the serial port for 1200 baud at 16MHz.
+ 103   1      ------------------------------------------------*/
+ 104   1      #ifndef MONITOR51
+ 105   1          SCON  = 0x50;                       /* SCON: mode 1, 8-bit UART, enable rcvr      */
+ 106   1          TMOD |= 0x20;               /* TMOD: timer 1, mode 2, 8-bit reload        */
+ 107   1          TH1   = 221;                /* TH1:  reload value for 1200 baud @ 16MHz   */
+ 108   1          TR1   = 1;                  /* TR1:  timer 1 run                          */
+ 109   1          TI    = 1;                  /* TI:   set TI to send first char of UART    */
+ 110   1      #endif
+ 111   1      
+ 112   1      LCD_init();
+ 113   1      
+ 114   1      
+ 115   1      
+ 116   1      
+ 117   1      
+C51 COMPILER V8.05a   MAIN                                                                 04/19/2019 10:26:16 PAGE 3   
+
+ 118   1      while(1){
+ 119   2      //printf("Jai swaminarayan\n");
+ 120   2      
+ 121   2      //P1 ^= 0x55;
+ 122   2      P1_0 = 0;
+ 123   2      delay(10000);
+ 124   2      P1_0 = 1;
+ 125   2      delay(10000);
+ 126   2      
+ 127   2      }
+ 128   1      
+ 129   1      }
+ 130          
+ 131          void delay(int k){
+ 132   1      int i =0;
+ 133   1      for (i =0;i<k;i++) { }
+ 134   1      }
+ 135          
+ 136          
+ 137          void LCD_init(void) {
+ 138   1      LCD_command(LCD_config1);
+ 139   1      LCD_command(LCD_config2);
+ 140   1      LCD_command(LCD_config3);
+ 141   1      LCD_command(LCD_config4);
+ 142   1      LCD_command(LCD_clear);
+ 143   1      
+ 144   1      LCD_welcome_msg();
+ 145   1      delay(1000);
+ 146   1      LCD_default_msg();
+ 147   1                                        
+ 148   1      }
+ 149          
+ 150          void LCD_welcome_msg(){
+ 151   1      LCD_command(LCD_line1_adrs);
+ 152   1      LCD_string(line1);
+ 153   1      LCD_command(LCD_line2_adrs);
+ 154   1      LCD_string(line2);
+ 155   1      LCD_command(LCD_line3_adrs);
+ 156   1      LCD_string(line3);
+ 157   1      LCD_command(LCD_line4_adrs);
+ 158   1      LCD_string(line4);
+ 159   1      }
+ 160          
+ 161          void LCD_default_msg(){
+ 162   1      LCD_command(LCD_clear);
+ 163   1      LCD_string(label_company_name);
+ 164   1      LCD_command(LCD_line2_adrs);
+ 165   1      LCD_string(label_door);
+ 166   1      LCD_command(LCD_line2_adrs + 15);
+ 167   1      LCD_string(label_mode);
+ 168   1      LCD_command(LCD_line3_adrs);
+ 169   1      LCD_string(label_lift);
+ 170   1      LCD_command(LCD_line4_adrs);
+ 171   1      LCD_string(label_call);
+ 172   1      LCD_command(LCD_line4_adrs + 15);
+ 173   1      LCD_string(label_ritz);
+ 174   1      
+ 175   1      
+ 176   1      
+ 177   1      
+ 178   1      
+ 179   1      
+C51 COMPILER V8.05a   MAIN                                                                 04/19/2019 10:26:16 PAGE 4   
+
+ 180   1      
+ 181   1      
+ 182   1      }
+ 183          
+ 184          
+ 185          void LCD_string(char *s){
+ 186   1      while( *s != '\0'){
+ 187   2       LCD_data(*s++);
+ 188   2      }
+ 189   1      }
+ 190          
+ 191          void LCD_data(char d){
+ 192   1      LCD_RS = 1;
+ 193   1      LCD_PORT = d;
+ 194   1      LCD_EN =1;
+ 195   1      delay(10);
+ 196   1      LCD_EN = 0;
+ 197   1      delay(10);
+ 198   1      }
+ 199          
+ 200          void LCD_command(char cmd){
+ 201   1      LCD_RS = 0;
+ 202   1      LCD_PORT = cmd;
+ 203   1      LCD_EN =1;
+ 204   1      delay(10);
+ 205   1      LCD_EN = 0;
+ 206   1      delay(10);
+ 207   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    303    ----
+   CONSTANT SIZE    =    170    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
